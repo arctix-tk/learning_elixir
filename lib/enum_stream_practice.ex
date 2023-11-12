@@ -11,9 +11,12 @@ defmodule EnumStreamPractice do
   @doc """
   Return list of line length of a file
 
-  iex> path = "./assets/file.txt"
-  iex> EnumStreamPractice.lines_length!(path)
-  [11, 13, 6]
+  ## Examples
+
+    iex> path = "./assets/file.txt"
+    iex> EnumStreamPractice.lines_length!(path)
+    [11, 13, 6]
+
   """
   def lines_length!(path) do
     path
@@ -24,9 +27,12 @@ defmodule EnumStreamPractice do
   @doc """
   Returns the length of the longest line in a file
 
-  iex> path = "./assets/file.txt"
-  iex> EnumStreamPractice.longest_line_length!(path)
-  13
+  ## Examples
+
+    iex> path = "./assets/file.txt"
+    iex> EnumStreamPractice.longest_line_length!(path)
+    13
+
   """
   def longest_line_length!(path) do
     path
@@ -37,9 +43,12 @@ defmodule EnumStreamPractice do
   @doc """
   Returns the content of the longest line in a file
 
-  iex> path = "./assets/file.txt"
-  iex> EnumStreamPractice.longest_line!(path)
-  "1234123123123"
+  ## Examples
+
+    iex> path = "./assets/file.txt"
+    iex> EnumStreamPractice.longest_line!(path)
+    "1234123123123"
+
   """
   def longest_line!(path) do
     path
@@ -51,9 +60,12 @@ defmodule EnumStreamPractice do
   Returns a list of numbers, with each number representing the
   word count in a file.
 
-  iex> path = "./assets/file.txt"
-  iex> EnumStreamPractice.words_per_line!(path)
-  [2,1,1]
+  ## Examples
+
+    iex> path = "./assets/file.txt"
+    iex> EnumStreamPractice.words_per_line!(path)
+    [2,1,1]
+
   """
   def words_per_line!(path) do
     path
