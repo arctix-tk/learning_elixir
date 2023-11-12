@@ -1,5 +1,5 @@
 defmodule TailRecursion do
-@moduledoc """
+  @moduledoc """
   Basic tail recursion examples.
   """
 
@@ -16,8 +16,8 @@ defmodule TailRecursion do
 
   """
   def list_len(list), do: calc_list_len(list, 0)
-  defp calc_list_len([],acc), do: acc
-  defp calc_list_len([_|tail],acc), do: calc_list_len(tail,acc + 1)
+  defp calc_list_len([], acc), do: acc
+  defp calc_list_len([_ | tail], acc), do: calc_list_len(tail, acc + 1)
 
   @doc """
   Returns a list of all integer numbers in the given range.
@@ -42,7 +42,7 @@ defmodule TailRecursion do
 
   """
   def positive(list), do: filter_positive(list, [])
-  defp filter_positive([],list), do: Enum.reverse(list)
+  defp filter_positive([], list), do: Enum.reverse(list)
   defp filter_positive([head | tail], acc) when head > 0, do: filter_positive(tail, [head | acc])
-  defp filter_positive([_|tail], result), do: filter_positive(tail, result)
+  defp filter_positive([_ | tail], result), do: filter_positive(tail, result)
 end
